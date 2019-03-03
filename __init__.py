@@ -7,6 +7,8 @@ class WildRace(MycroftSkill):
 
     @intent_file_handler('race.wild.intent')
     def handle_race_wild(self, message):
+        self.speak_dialog('ready')
+        self.speak_dialog('countdown')
         self.speak_dialog('race.wild')
 
 
